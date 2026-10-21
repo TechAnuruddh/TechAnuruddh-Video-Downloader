@@ -51,7 +51,7 @@ class DownloadRequest(BaseModel):
 
 # ── Helpers ─────────────────────────────────────────────────────────────
 def _ytdlp_base_args() -> list:
-    args = ["yt-dlp", "--no-playlist", "--no-warnings"]
+    args = ["yt-dlp", "--no-playlist", "--no-warnings", "--extractor-args", "youtube:player_client=tv,web_safari"]
     if os.path.isfile(COOKIES_FILE):
         args += ["--cookies", COOKIES_FILE]
     return args
