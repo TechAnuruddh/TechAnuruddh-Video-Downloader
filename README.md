@@ -143,4 +143,4 @@ Retain and follow the original project's MIT license and attribution requirement
 
 
 
-Run Command:= cd C:\Users\hp\Downloads\yt-dlp-web-main\yt-dlp-web-main; .\.venv\Scripts\Activate.ps1; $env:Path += ";C:\Users\hp\Downloads\ffmpeg-9.0.2-essentials_build\ffmpeg-9.0.2-essentials_build\bin"; python main.py
+Run Command:= cd C:\Users\hp\Downloads\yt-dlp-web-main\yt-dlp-web-main; .\.venv\Scripts\Activate.ps1; $env:Path = "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build-shared\bin;$env:Path"; python main.py
